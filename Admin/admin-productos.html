@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Listado de Productos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Café NY - Administración de Productos</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-home.html">Inicio Admin</a></li>
+      <li><a href="admin-productos.html">Mantenedor de Productos</a></li>
+      <li><a href="admin-usuarios.html">Mantenedor de Usuarios</a></li>
+      <li><a href="../Tienda/index.html">Volver a la Tienda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Listado de Productos</h2>
+      <p><a href="admin-producto-nuevo.html">+ Agregar Nuevo Producto</a></p>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PROD-01</td>
+            <td>Café Espresso</td>
+            <td>$2.500</td>
+            <td>15</td>
+            <td>Bebidas Calientes</td>
+            <td>
+              <a href="admin-producto-mostrar.html">Ver</a> | 
+              <a href="admin-producto-editar.html">Editar</a> | 
+              <button type="button">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>PROD-02</td>
+            <td>Café Latte</td>
+            <td>$3.000</td>
+            <td>8</td>
+            <td>Bebidas Calientes</td>
+            <td>
+              <a href="admin-producto-mostrar.html">Ver</a> | 
+              <a href="admin-producto-editar.html">Editar</a> | 
+              <button type="button">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Panel de Control Interno</p>
+  </footer>
+
+</body>
+</html>

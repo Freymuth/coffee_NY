@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Nuevo Producto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Café NY - Crear Producto</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-home.html">Inicio Admin</a></li>
+      <li><a href="admin-productos.html">Mantenedor de Productos</a></li>
+      <li><a href="admin-usuarios.html">Mantenedor de Usuarios</a></li>
+      <li><a href="../Tienda/index.html">Volver a la Tienda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Agregar Nuevo Producto</h2>
+
+      <form id="form_producto_nuevo">
+        <fieldset>
+          <legend>Información del Producto</legend>
+
+          <p>
+            <label for="codigo">Código de Producto:</label><br>
+            <input type="text" id="codigo" name="codigo">
+            <span id="mensaje_codigo"></span>
+          </p>
+
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre">
+            <span id="mensaje_nombre"></span>
+          </p>
+
+          <p>
+            <label for="descripcion">Descripción (Opcional):</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="40"></textarea>
+            <span id="mensaje_descripcion"></span>
+          </p>
+
+          <p>
+            <label for="precio">Precio ($):</label><br>
+            <input type="number" id="precio" name="precio" min="0">
+            <span id="mensaje_precio"></span>
+          </p>
+
+          <p>
+            <label for="stock">Stock Actual:</label><br>
+            <input type="number" id="stock" name="stock" min="0">
+            <span id="mensaje_stock"></span>
+          </p>
+
+          <p>
+            <label for="stock_critico">Stock Crítico (Opcional):</label><br>
+            <input type="number" id="stock_critico" name="stock_critico" min="0">
+            <span id="mensaje_stock_critico"></span>
+          </p>
+
+          <p>
+            <label for="categoria">Categoría:</label><br>
+            <select id="categoria" name="categoria">
+              <option value="">Seleccione una categoría...</option>
+              <option value="Bebidas Calientes">Bebidas Calientes</option>
+              <option value="Bebidas Frías">Bebidas Frías</option>
+              <option value="Grano y Molido">Grano y Molido</option>
+            </select>
+            <span id="mensaje_categoria"></span>
+          </p>
+
+          <p>
+            <label for="imagen">URL de Imagen (Opcional):</label><br>
+            <input type="text" id="imagen" name="imagen">
+            <span id="mensaje_imagen"></span>
+          </p>
+
+          <p>
+            <button type="button" onclick="validarProducto()">Guardar Producto</button>
+            <a href="admin-productos.html">Cancelar</a>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Panel de Control Interno</p>
+  </footer>
+
+</body>
+</html>

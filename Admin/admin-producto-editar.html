@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Editar Producto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Café NY - Editar Producto</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-home.html">Inicio Admin</a></li>
+      <li><a href="admin-productos.html">Mantenedor de Productos</a></li>
+      <li><a href="admin-usuarios.html">Mantenedor de Usuarios</a></li>
+      <li><a href="../Tienda/index.html">Volver a la Tienda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Modificar Producto: PROD-01</h2>
+
+      <form id="form_producto_editar">
+        <fieldset>
+          <legend>Editar Información</legend>
+
+          <p>
+            <label for="codigo">Código de Producto:</label><br>
+            <input type="text" id="codigo" name="codigo" value="PROD-01" readonly>
+          </p>
+
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" value="Café Espresso">
+            <span id="mensaje_nombre"></span>
+          </p>
+
+          <p>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="40">Café concentrado de tueste oscuro.</textarea>
+            <span id="mensaje_descripcion"></span>
+          </p>
+
+          <p>
+            <label for="precio">Precio ($):</label><br>
+            <input type="number" id="precio" name="precio" value="2500">
+            <span id="mensaje_precio"></span>
+          </p>
+
+          <p>
+            <label for="stock">Stock Actual:</label><br>
+            <input type="number" id="stock" name="stock" value="15">
+            <span id="mensaje_stock"></span>
+          </p>
+
+          <p>
+            <label for="stock_critico">Stock Crítico:</label><br>
+            <input type="number" id="stock_critico" name="stock_critico" value="5">
+            <span id="mensaje_stock_critico"></span>
+          </p>
+
+          <p>
+            <label for="categoria">Categoría:</label><br>
+            <select id="categoria" name="categoria">
+              <option value="Bebidas Calientes" selected>Bebidas Calientes</option>
+              <option value="Bebidas Frías">Bebidas Frías</option>
+            </select>
+          </p>
+
+          <p>
+            <button type="button" onclick="validarProducto()">Actualizar Producto</button>
+            <a href="admin-productos.html">Cancelar</a>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Panel de Control Interno</p>
+  </footer>
+
+</body>
+</html>

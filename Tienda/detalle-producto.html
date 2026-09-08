@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Café NY - Detalle de Producto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Café NY</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Ficha del Producto -->
+    <section>
+      <article>
+        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=500&auto=format&fit=crop" alt="Café Espresso" width="300">
+        <h2>Café Espresso</h2>
+        <p><strong>Categoría:</strong> Café en Grano / Bebida Caliente</p>
+        <p><strong>Precio:</strong> $2.500</p>
+        <p><strong>Descripción:</strong> Una dosis concentrada de café puro, elaborado con granos seleccionados 100% Arábica con notas de chocolate amargo y avellanas.</p>
+        
+        <form>
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10">
+          <button type="button">Añadir al carrito</button>
+        </form>
+      </article>
+    </section>
+
+    <!-- Productos Relacionados -->
+    <section>
+      <h3>Productos Relacionados</h3>
+      <article>
+        <h4><a href="detalle-producto.html">Café Latte</a></h4>
+        <p>Precio: $3.000</p>
+      </article>
+      <article>
+        <h4><a href="detalle-producto.html">Café Cappuccino</a></h4>
+        <p>Precio: $3.200</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Todos los derechos reservados.</p>
+    <p><a href="../Admin/admin-home.html">Acceso Administrador</a></p>
+  </footer>
+
+</body>
+</html>

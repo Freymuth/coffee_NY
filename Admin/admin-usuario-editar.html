@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Editar Usuario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+  <script src="../regiones-comunas.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Café NY - Editar Usuario</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-home.html">Inicio Admin</a></li>
+      <li><a href="admin-productos.html">Mantenedor de Productos</a></li>
+      <li><a href="admin-usuarios.html">Mantenedor de Usuarios</a></li>
+      <li><a href="../Tienda/index.html">Volver a la Tienda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Modificar Usuario: 19011022K</h2>
+
+      <form id="form_usuario_editar">
+        <fieldset>
+          <legend>Editar Información</legend>
+
+          <p>
+            <label for="run">RUN:</label><br>
+            <input type="text" id="run" name="run" value="19011022K" readonly>
+          </p>
+
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" value="Juan">
+            <span id="mensaje_nombre"></span>
+          </p>
+
+          <p>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" value="Pérez">
+            <span id="mensaje_apellidos"></span>
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="text" id="correo" name="correo" value="juan.perez@duoc.cl">
+            <span id="mensaje_correo"></span>
+          </p>
+
+          <p>
+            <label for="tipo_usuario">Tipo de Usuario (Rol):</label><br>
+            <select id="tipo_usuario" name="tipo_usuario">
+              <option value="Administrador" selected>Administrador</option>
+              <option value="Cliente">Cliente</option>
+              <option value="Vendedor">Vendedor</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" value="Av. Providencia 1234">
+            <span id="mensaje_direccion"></span>
+          </p>
+
+          <p>
+            <button type="button" onclick="validarUsuario()">Actualizar Usuario</button>
+            <a href="admin-usuarios.html">Cancelar</a>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Panel de Control Interno</p>
+  </footer>
+
+</body>
+</html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Café NY - Registro de Usuario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+  <script src="../regiones-comunas.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Café NY</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registro de Usuario</h2>
+      <p>Crea tu cuenta para realizar compras y recibir promociones exclusivas.</p>
+
+      <form id="form_registro">
+        <fieldset>
+          <legend>Datos Personales</legend>
+
+          <p>
+            <label for="run">RUN (sin puntos ni guion):</label><br>
+            <input type="text" id="run" name="run" placeholder="19011022K">
+            <span id="mensaje_run"></span>
+          </p>
+
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre">
+            <span id="mensaje_nombre"></span>
+          </p>
+
+          <p>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos">
+            <span id="mensaje_apellidos"></span>
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="text" id="correo" name="correo" placeholder="ejemplo@duoc.cl">
+            <span id="mensaje_correo"></span>
+          </p>
+
+          <p>
+            <label for="fecha_nacimiento">Fecha de Nacimiento (Opcional):</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            <span id="mensaje_fecha"></span>
+          </p>
+
+          <p>
+            <label for="region">Región:</label><br>
+            <select id="region" name="region" onchange="cargarComunas()">
+              <option value="">Seleccione una región...</option>
+            </select>
+            <span id="mensaje_region"></span>
+          </p>
+
+          <p>
+            <label for="comuna">Comuna:</label><br>
+            <select id="comuna" name="comuna">
+              <option value="">Seleccione primero una región...</option>
+            </select>
+            <span id="mensaje_comuna"></span>
+          </p>
+
+          <p>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion">
+            <span id="mensaje_direccion"></span>
+          </p>
+
+          <p>
+            <button type="button" onclick="validarRegistro()">Registrarse</button>
+            <button type="reset">Limpiar</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Todos los derechos reservados.</p>
+    <p><a href="../Admin/admin-home.html">Acceso Administrador</a></p>
+  </footer>
+
+</body>
+</html>

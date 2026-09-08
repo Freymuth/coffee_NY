@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Café NY - Carrito de Compras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Café NY</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="carrito.html">Carrito 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Carrito de Compras</h2>
+
+      <table border="1" id="tabla_carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Café Espresso</td>
+            <td>$2.500</td>
+            <td><input type="number" value="1" min="1" width="50"></td>
+            <td>$2.500</td>
+            <td><button type="button">Eliminar</button></td>
+          </tr>
+          <tr>
+            <td>Café Latte</td>
+            <td>$3.000</td>
+            <td><input type="number" value="2" min="1" width="50"></td>
+            <td>$6.000</td>
+            <td><button type="button">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section>
+        <h3>Resumen de Compra</h3>
+        <p><strong>Subtotal:</strong> $8.500</p>
+        
+        <p>
+          <label for="cupon">Cupón de descuento:</label>
+          <input type="text" id="cupon" name="cupon" placeholder="Ej: DESCUENTO10">
+          <button type="button">Aplicar</button>
+        </p>
+
+        <p><strong>Total:</strong> $8.500</p>
+        
+        <button type="button">Simular Pago</button>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Todos los derechos reservados.</p>
+    <p><a href="../Admin/admin-home.html">Acceso Administrador</a></p>
+  </footer>
+
+</body>
+</html>

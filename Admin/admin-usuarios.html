@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Listado de Usuarios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Café NY - Administración de Usuarios</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-home.html">Inicio Admin</a></li>
+      <li><a href="admin-productos.html">Mantenedor de Productos</a></li>
+      <li><a href="admin-usuarios.html">Mantenedor de Usuarios</a></li>
+      <li><a href="../Tienda/index.html">Volver a la Tienda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Listado de Usuarios</h2>
+      <p><a href="admin-usuario-nuevo.html">+ Crear Nuevo Usuario</a></p>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>RUN</th>
+            <th>Nombre Completo</th>
+            <th>Correo</th>
+            <th>Rol / Tipo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>19011022K</td>
+            <td>Juan Pérez</td>
+            <td>juan.perez@duoc.cl</td>
+            <td>Administrador</td>
+            <td>
+              <a href="admin-usuario-mostrar.html">Ver</a> | 
+              <a href="admin-usuario-editar.html">Editar</a> | 
+              <button type="button">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>182233445</td>
+            <td>María González</td>
+            <td>maria.gonzalez@gmail.com</td>
+            <td>Cliente</td>
+            <td>
+              <a href="admin-usuario-mostrar.html">Ver</a> | 
+              <a href="admin-usuario-editar.html">Editar</a> | 
+              <button type="button">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Panel de Control Interno</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Nuevo Usuario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+  <script src="../regiones-comunas.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Café NY - Crear Usuario</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="admin-home.html">Inicio Admin</a></li>
+      <li><a href="admin-productos.html">Mantenedor de Productos</a></li>
+      <li><a href="admin-usuarios.html">Mantenedor de Usuarios</a></li>
+      <li><a href="../Tienda/index.html">Volver a la Tienda</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Agregar Nuevo Usuario</h2>
+
+      <form id="form_usuario_nuevo">
+        <fieldset>
+          <legend>Datos del Usuario</legend>
+
+          <p>
+            <label for="run">RUN (sin puntos ni guion):</label><br>
+            <input type="text" id="run" name="run" placeholder="19011022K">
+            <span id="mensaje_run"></span>
+          </p>
+
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre">
+            <span id="mensaje_nombre"></span>
+          </p>
+
+          <p>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos">
+            <span id="mensaje_apellidos"></span>
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="text" id="correo" name="correo" placeholder="ejemplo@duoc.cl">
+            <span id="mensaje_correo"></span>
+          </p>
+
+          <p>
+            <label for="tipo_usuario">Tipo de Usuario (Rol):</label><br>
+            <select id="tipo_usuario" name="tipo_usuario">
+              <option value="">Seleccione un rol...</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Cliente">Cliente</option>
+              <option value="Vendedor">Vendedor</option>
+            </select>
+            <span id="mensaje_tipo"></span>
+          </p>
+
+          <p>
+            <label for="fecha_nacimiento">Fecha de Nacimiento (Opcional):</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            <span id="mensaje_fecha"></span>
+          </p>
+
+          <p>
+            <label for="region">Región:</label><br>
+            <select id="region" name="region" onchange="cargarComunas()">
+              <option value="">Seleccione una región...</option>
+            </select>
+            <span id="mensaje_region"></span>
+          </p>
+
+          <p>
+            <label for="comuna">Comuna:</label><br>
+            <select id="comuna" name="comuna">
+              <option value="">Seleccione primero una región...</option>
+            </select>
+            <span id="mensaje_comuna"></span>
+          </p>
+
+          <p>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion">
+            <span id="mensaje_direccion"></span>
+          </p>
+
+          <p>
+            <button type="button" onclick="validarUsuario()">Guardar Usuario</button>
+            <a href="admin-usuarios.html">Cancelar</a>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café NY - Panel de Control Interno</p>
+  </footer>
+
+</body>
+</html>

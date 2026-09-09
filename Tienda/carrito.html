@@ -38,37 +38,23 @@
             <th>Acción</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Café Espresso</td>
-            <td>$2.500</td>
-            <td><input type="number" value="1" min="1" width="50"></td>
-            <td>$2.500</td>
-            <td><button type="button">Eliminar</button></td>
-          </tr>
-          <tr>
-            <td>Café Latte</td>
-            <td>$3.000</td>
-            <td><input type="number" value="2" min="1" width="50"></td>
-            <td>$6.000</td>
-            <td><button type="button">Eliminar</button></td>
-          </tr>
+        <tbody id="tabla_carrito_body">
+          <!-- Las filas se generan dinámicamente con carrito.js -->
         </tbody>
       </table>
 
       <section>
         <h3>Resumen de Compra</h3>
-        <p><strong>Subtotal:</strong> $8.500</p>
-        
+
         <p>
           <label for="cupon">Cupón de descuento:</label>
           <input type="text" id="cupon" name="cupon" placeholder="Ej: DESCUENTO10">
           <button type="button">Aplicar</button>
         </p>
 
-        <p><strong>Total:</strong> $8.500</p>
-        
-        <button type="button">Simular Pago</button>
+        <p><strong>Total:</strong> <span id="carrito_total">$0</span></p>
+
+        <button type="button" onclick="alert('Compra simulada. No hay conexión a backend en esta etapa.')">Simular Pago</button>
       </section>
     </section>
   </main>
@@ -78,5 +64,6 @@
     <p><a href="../Admin/admin-home.html">Acceso Administrador</a></p>
   </footer>
 
+  <script src="../carrito.js"></script>
 </body>
 </html>

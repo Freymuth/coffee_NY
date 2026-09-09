@@ -42,7 +42,7 @@
         <h3>Café Espresso</h3>
         <p>Intenso, concentrado y con la crema perfecta para comenzar el día.</p>
         <p><strong>Precio:</strong> $2.500</p>
-        <button type="button">Añadir al carrito</button>
+        <button type="button" onclick="agregarAlCarrito('Café Espresso', 2500)">Añadir al carrito</button>
         <p></p>
       </article>
 
@@ -51,8 +51,22 @@
         <h3>Café Latte</h3>
         <p>Espresso suave balanceado con leche texturizada al vapor.</p>
         <p><strong>Precio:</strong> $3.000</p>
-        <button type="button">Añadir al carrito</button>
+        <button type="button" onclick="agregarAlCarrito('Café Latte', 3000)">Añadir al carrito</button>
       </article>
+    </section>
+
+    <!--
+    Video embebido: requisito de la pauta ("videos embebidos").
+    IMPORTANTE: reemplazar VIDEO_ID por el id real de un video de YouTube.
+    -->
+    <section>
+      <h2>Conoce Café NY</h2>
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Video presentación Café NY"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
     </section>
   </main>
 
@@ -62,5 +76,6 @@
     <p><a href="../Admin/admin-home.html">Acceso Administrador</a></p>
   </footer>
 
+  <script src="../carrito.js"></script>
 </body>
 </html>
